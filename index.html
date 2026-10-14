@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bài thực hành thanh điều hướng responsive với HTML, CSS và JavaScript.">
+    <title>Thanh điều hướng responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Điều hướng chính">
+            <a class="logo" href="#home" aria-label="Mộc Studio - Trang chủ">
+                <span class="logo-mark" aria-hidden="true">M</span>
+                <span>Mộc Studio</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Mở menu"
+                aria-expanded="false"
+                aria-controls="primary-menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="primary-menu">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+            <a class="nav-cta" href="#contact">Bắt đầu ngay <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero" aria-labelledby="hero-title">
+            <p class="eyebrow"><span></span> Thiết kế tốt bắt đầu từ sự đơn giản</p>
+            <h1 id="hero-title">Chào mừng đến<br>với <em>Mộc Studio</em></h1>
+            <p class="hero-copy">Chúng tôi tạo nên những trải nghiệm số tinh tế, thân thiện và phù hợp với mọi màn hình.</p>
+            <a class="hero-link" href="#services">Khám phá dịch vụ <span aria-hidden="true">↓</span></a>
+            <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+            <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+        </section>
+
+        <section class="content" id="about">
+            <div>
+                <p class="eyebrow">Một studio nhỏ, ý tưởng lớn</p>
+                <h2>Thiết kế gần gũi<br>cho cuộc sống hiện đại.</h2>
+            </div>
+            <p class="content-copy" id="services">Từ website đến trải nghiệm thương hiệu, Mộc Studio đồng hành cùng bạn để biến những ý tưởng tốt thành sản phẩm hữu ích.</p>
+        </section>
+        <footer id="contact">© 2026 Mộc Studio <span>Được thiết kế cho mọi thiết bị.</span></footer>
+    </main>
+</body>
+</html>
